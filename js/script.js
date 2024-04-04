@@ -100,11 +100,66 @@ console.log(48 == "48");
 let animal = "Lion";
 
 // Write code that will print out "mooooo" if the it is equal to cow
-
+// Change your code so that if the variable animal is anything other than a cow, it will print "Hey! You're not a cow." Commit
 if (animal === "Cow") {
     console.log("MOOOOOOOOO");
 } else {
-    console.log("YOU'RE NOT A COW");
+    console.log("Hey! You're not a cow.");
 }
 
-// Change your code so that if the variable animal is anything other than a cow, it will print "Hey! You're not a cow." Commit
+/**
+ *
+ * Drivers Ed
+ *
+ */
+
+// Make a variable that holds a person's age; be semantic
+
+let age = 15;
+
+// Write code that will print out "Here are the keys!", if the age is 16 years or older, or, if the age is younger than 16, a message should print "Sorry, you're too young."
+
+if (age >= 16) {
+    console.log("Here are the keys!");
+} else {
+    console.log("Sorry, you're too young.");
+}
+
+/**
+ *
+ * Biggie Smalls
+ *
+ */
+
+// Create a variable that contains an integer.
+
+const newInt = 100;
+
+// Write an if ... else statement that:
+// console.log() "little number" if the number is entered is less than 100
+// console.log()  big number if the number is greater than or equal to 100.
+
+if (newInt < 100) {
+    console.log("little number");
+} else {
+    console.log("big number");
+}
+
+/**
+ *
+ * Monkey in the Middle
+ *
+ */
+
+// Write an if ... else if ... else statement:
+// console.log() "little number" if the number entered is less than 5.
+// If the number entered is more than 10, log "big number".
+// Otherwise, log "monkey".
+let num = 7;
+if (num < 5) {
+    console.log("little number");
+} else if (num > 10) {
+    console.log("big number");
+} else {
+    console.log("monkey");
+}
