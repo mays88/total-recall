@@ -201,14 +201,15 @@ if (num < 5) {
  */
 
 console.log(
-    "----------Print out the [even] numbers that are within the range of 1 - 100----------"
+    "----------Print out the numbers that are within the range of 1 - 100----------"
 );
-
-for (let even = 0; even <= 100; even++) {
-    if (even % 2 === 0) {
-        console.log(even);
-    }
-}
 console.log(
     `----------Adjust your code to add a message next to even numbers only that says: "is an even number"----------`
 );
+for (let even = 1; even <= 100; even++) {
+    if (even % 2 === 0) {
+        console.log(`${even} is an even number.`);
+    } else {
+        console.log(even);
+    }
+}
