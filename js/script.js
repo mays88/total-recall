@@ -214,22 +214,27 @@ if (num < 5) {
 //     }
 // }
 
-console.log(`For the numbers 0 - 100, print out "I found a <number>. High five!" if the number is a multiple of five Example Output:
-I found a 5. High five!
-I found a 10. High five!`);
+// console.log(`--For the numbers 0 - 100, print out "I found a <number>. High five!" if the number is a multiple of five Example Output:
+// I found a 5. High five!
+// I found a 10. High five!`);
 
 for (let num = 0; num <= 100; num++) {
     if (num % 5 === 0) {
         console.log(`I found a ${num}. High five!`);
+    } else if (num % 3 === 0) {
+        console.log(`I found a ${num}. Three is a crowd`);
     } else {
         console.log(`I found a ${num}.`);
     }
 }
 
-// Add to the code from above to print out "I found a number. Three is a crowd" if the number is a multiple of three Example Output:
-// I found a 3. Three is a crowd
-// I found a 5. High five!
-// I found a 6. Three is a crowd
-// I found a 9. Three is a crowd
-// I found a 10. High five!
+console.log(`
+
+--Add to the code from above to print out "I found a number. Three is a crowd" if the number is a multiple of three Example Output:
+I found a 3. Three is a crowd
+I found a 5. High five!
+I found a 6. Three is a crowd
+I found a 9. Three is a crowd
+I found a 10. High five!`);
+
 // For numbers divisible by both three and five, be sure your code prints both messages
