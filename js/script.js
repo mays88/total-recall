@@ -170,11 +170,26 @@ if (num < 5) {
  *
  */
 
-// Write a loop that will print out all the numbers from 0 to 10, inclusive
+// console.log(
+//     "----------Write a loop that will print out all the numbers from 0 to 10, inclusive----------"
+// );
 
-for (let counter = 0; counter <= 10; counter++) {
-    console.log(counter);
+// for (let x = 0; x <= 10; x++) {
+//     console.log(x);
+// }
+
+// console.log(
+//     "----------Write a loop that will print out all the numbers from 10 up to and including 400----------"
+// );
+
+// for (let x = 10; x <= 400; x++) {
+//     console.log(x);
+// }
+
+console.log(
+    "----------Write a loop that will print out every third number starting with 12 and going no higher than 4000----------"
+);
+
+for (let x = 12; x <= 4000; x += 3) {
+    console.log(x);
 }
-
-// Write a loop that will print out all the numbers from 10 up to and including 400
-// Write a loop that will print out every third number starting with 12 and going no higher than 4000
