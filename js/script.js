@@ -166,7 +166,7 @@ if (num < 5) {
 
 /**
  * SECTION 2:
- * The Basics
+ * A. The Basics
  *
  */
 
@@ -186,10 +186,29 @@ if (num < 5) {
 //     console.log(x);
 // }
 
+// console.log(
+//     "----------Write a loop that will print out every third number starting with 12 and going no higher than 4000----------"
+// );
+
+// for (let x = 12; x <= 4000; x += 3) {
+//     console.log(x);
+// }
+
+/**
+ *
+ * B. Basics
+ *
+ */
+
 console.log(
-    "----------Write a loop that will print out every third number starting with 12 and going no higher than 4000----------"
+    "----------Print out the [even] numbers that are within the range of 1 - 100----------"
 );
 
-for (let x = 12; x <= 4000; x += 3) {
-    console.log(x);
+for (let even = 0; even <= 100; even++) {
+    if (even % 2 === 0) {
+        console.log(even);
+    }
 }
+console.log(
+    `----------Adjust your code to add a message next to even numbers only that says: "is an even number"----------`
+);
