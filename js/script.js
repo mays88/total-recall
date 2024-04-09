@@ -200,16 +200,36 @@ if (num < 5) {
  *
  */
 
-console.log(
-    "----------Print out the numbers that are within the range of 1 - 100----------"
-);
-console.log(
-    `----------Adjust your code to add a message next to even numbers only that says: "is an even number"----------`
-);
-for (let even = 1; even <= 100; even++) {
-    if (even % 2 === 0) {
-        console.log(`${even} is an even number.`);
+// console.log(
+//     "----------Print out the numbers that are within the range of 1 - 100----------"
+// );
+// console.log(
+//     `----------Adjust your code to add a message next to even numbers only that says: "is an even number"----------`
+// );
+// for (let even = 1; even <= 100; even++) {
+//     if (even % 2 === 0) {
+//         console.log(`${even} is an even number.`);
+//     } else {
+//         console.log(even);
+//     }
+// }
+
+console.log(`For the numbers 0 - 100, print out "I found a <number>. High five!" if the number is a multiple of five Example Output:
+I found a 5. High five!
+I found a 10. High five!`);
+
+for (let num = 0; num <= 100; num++) {
+    if (num % 5 === 0) {
+        console.log(`I found a ${num}. High five!`);
     } else {
-        console.log(even);
+        console.log(`I found a ${num}.`);
     }
 }
+
+// Add to the code from above to print out "I found a number. Three is a crowd" if the number is a multiple of three Example Output:
+// I found a 3. Three is a crowd
+// I found a 5. High five!
+// I found a 6. Three is a crowd
+// I found a 9. Three is a crowd
+// I found a 10. High five!
+// For numbers divisible by both three and five, be sure your code prints both messages
