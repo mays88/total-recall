@@ -219,7 +219,9 @@ if (num < 5) {
 // I found a 10. High five!`);
 
 for (let num = 0; num <= 100; num++) {
-    if (num % 5 === 0) {
+    if (num % 5 === 0 && num % 3 === 0) {
+        console.log(`I found a ${num}. Three is a crowd, High five!`);
+    } else if (num % 5 === 0) {
         console.log(`I found a ${num}. High five!`);
     } else if (num % 3 === 0) {
         console.log(`I found a ${num}. Three is a crowd`);
@@ -235,6 +237,6 @@ I found a 3. Three is a crowd
 I found a 5. High five!
 I found a 6. Three is a crowd
 I found a 9. Three is a crowd
-I found a 10. High five!`);
+I found a 10. High five!
 
-// For numbers divisible by both three and five, be sure your code prints both messages
+-- For numbers divisible by both three and five, be sure your code prints both messages`);
