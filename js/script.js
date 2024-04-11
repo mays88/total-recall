@@ -260,4 +260,225 @@ console.log(`
 
 Your bank account currently has $${bankAcct * 2} in it.
 
+// `);
+/**
+ *
+ *
+ *
+ *
+ * ARRAYS
+ *
+ *
+ *
+ *
+ *  */
+
+// A. Talk about it in your group:
+console.log("What are the things in an array called? -- Elements");
+console.log("Do Arrays guarantee those things will be in order? -- Yes ");
+console.log(
+    " What real-life thing could you model with an array? -- Shopping List "
+);
+
+// B. Easy Does It
+
+console.log(
+    "Create an array that contains three quotes and store it in a variable called quotes"
+);
+
+const quotes = [
+    "Win Win Win No matter what",
+    "Lose Yourself, Do not miss your chance to blow",
+    "Sometimes you gotta race",
+];
+
+console.log(quotes);
+
+// C. Accessing elements
+
+console.log(`Given the following array const randomThings = [1, 10, "Hello", true]
+How do you access the 1st element in the array?`);
+
+const randomThings = [1, 10, "Hello", true];
+
+console.log(
+    `The first element is selected using randomThings[0] which is: ${randomThings[0]}`
+);
+
+console.log(`Change the value of "Hello"to "World"`);
+
+randomThings[2] = "World";
+
+console.log(randomThings);
+// Check the value of the array to make sure it updated the array. How? Why, yes! console.log();
+
+// D. Change values
+console.log(`Given the following array const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
+
+What would you write to access the 3rd element of the array?`);
+
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
+
+console.log(ourClass[2]);
+
+console.log('Change the value of "Github" to "Octocat"');
+
+ourClass[4] = "Octocat";
+
+console.log(ourClass);
+
+console.log('Add a new element, "Cloud City" to the array');
+//
+ourClass.push("Cloud City");
+console.log(ourClass);
+// E. Mix It Up
+console.log(`Note: You don't really need .splice()for these. You could use it, but there are simpler array methods that are more appropriate.
+Given the following array: const myArray = [5, 10, 500, 20]
+
+Add the string "Aegon"to the end of the array. Add another string of your choice to the end of the array.`);
+
+const myArray = [5, 10, 500, 20];
+
+myArray.push("Aegon");
+
+console.log(myArray);
+myArray.push("Mays88");
+console.log(myArray);
+
+console.log(`Remove the 5 from the beginning of the array.`);
+myArray.shift();
+console.log(myArray);
+// Add the string "Bob Marley"to the beginning of the array.
+console.log("Remove the string of your choice from the end of the array.");
+myArray.pop();
+console.log(myArray);
+console.log(
+    "Reverse this array using Array.prototype.reverse(). Did you mutate the array? What does mutate mean? Did the .reverse()method return anything?"
+);
+
+const reversedArray = myArray.reverse();
+console.log(myArray);
+console.log(reversedArray);
+console.log(
+    "Yes, the array was mutated. Mutate means to change or modify something."
+);
+console.log("The reversed array returns a reference to the reversed array");
+
+// H. What's in Your Closet?
+
+console.log(`Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript.
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "Per Scholas hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+// Thom's closet is more complicated. Check out this nested data structure!!
+
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];`);
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps",
+];
+
+const thomsCloset = [
+    [
+        // These are Thom's shirts
+        "grey button-up",
+        "dark grey button-up",
+        "light blue button-up",
+        "blue button-up",
+    ],
+    [
+        // These are Thom's pants
+        "grey jeans",
+        "jeans",
+        "PJs",
+    ],
+    [
+        // Thom's accessories
+        "wool mittens",
+        "wool scarf",
+        "raybans",
+    ],
+];
+console.log(
+    `What's Kristyn wearing today? Using bracket notation to access items in kristynsCloset, log the sentence "Kristyn is rocking that " + the third item in Kristyn's closet + " today!" to the console.`
+);
+
+console.log(` 
+
+Kristyn is rocking that ${kristynsCloset[2]} today!
+
 `);
+
+console.log(`
+Kristyn just bought some sweet shades! Add "raybans"to her closet after "yellow knit hat".
+`);
+
+kristynsCloset.splice(6, 0, "Raybans");
+
+console.log(kristynsCloset);
+
+console.log(`
+Kristyn spilled coffee on her hat... modify this item to read "stained knit hat"instead of yellow.
+`);
+
+const krisKnit = kristynsCloset.indexOf("yellow knit hat");
+
+console.log((kristynsCloset[krisKnit] = "stained knit hat"));
+console.log(kristynsCloset);
+
+console.log(`
+Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirtsarray.
+
+In the same way, access one item from Thom's pants array.
+
+Access one item from Thom's accessories array.
+
+Log a sentence about what Thom's wearing. Example: "Thom is looking fierce in a grey button-up, jeans and wool scarf!
+`);
+
+console.log(
+    `Thom is looking fierce in a ${thomsCloset[0][2]}, ${thomsCloset[1][0]} and ${thomsCloset[2][1]}!`
+);
+
+console.log(
+    `
+    
+    Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.`
+);
+
+const thomPJs = thomsCloset[1].indexOf("PJs");
+
+thomsCloset[1][thomPJs] = "Footie Pajamas";
+
+console.log(thomsCloset);
+console.log(thomsCloset[1]);
